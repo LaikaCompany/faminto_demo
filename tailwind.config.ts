@@ -9,9 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        mainBrown: "#7b3911",
+        mainOrange: "#EE8C00",
+        lightGray: "rgb(208, 206, 206)",
+        lightYellow: "#f3f3d5"
       },
+      fontFamily: {
+        famintoLogo: ["Radio Canada", "sans-serif"],
+        main: "Lato, sans-serif"
+      }
     },
   },
   plugins: [],
