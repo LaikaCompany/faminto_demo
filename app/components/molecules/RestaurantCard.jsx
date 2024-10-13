@@ -1,6 +1,6 @@
 import AtomButton from '../atoms/AtomButton.jsx'
 
-export default function RestaurantCard ()
+export default function RestaurantCard({onMenuClick})
 {
     return (
         <div className="flex flex-col gap-4 p-2 border-[0.5px] border-gray-400 rounded-xl min-h-64">
@@ -16,7 +16,7 @@ export default function RestaurantCard ()
                 </div>
             </div>
             <div>
-                <AtomButton text={"Fazer pedido"}/>
+                <AtomButton text={"Fazer pedido"} onclick={onMenuClick}/>
             </div>
         </div>
     )
