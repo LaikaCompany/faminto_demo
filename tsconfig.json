@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/hooks/useObserver.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/hooks/useObserver.js", "app/menu/prato/page.jsx", "app/menu/layout.jsx", "app/context/OrderCar.js", "app/menu/page.jsx"],
   "exclude": ["node_modules"]
 }

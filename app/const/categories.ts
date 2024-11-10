@@ -60,3 +60,92 @@ export const CATEGORIES = [
         title: "Shawarma"
     }, 
 ]
+
+
+export const sizes = [
+    {
+        id: 1, 
+        name: "Pequeno",
+        price: "R$ 35,00"
+    },
+    {
+        id: 2, 
+        name: "Médio", 
+        price: "R$ 45,00"
+    },
+    {
+        id: 3, 
+        name: "Grande", 
+        price: "R$ 50,00"
+    },
+    {
+        id: 4, 
+        name: "Extra grande", 
+        price: "R$ 55,00"
+    }
+]
+
+export const products = [
+    {
+        id: 1, 
+        name: "Item 1",
+        description: "Alguma descrição da comida que você vai querer muito comer hehehe",
+        price: "R$ 40,00",
+        section: 1,
+    }, 
+    {
+        id: 2, 
+        name: "Item 2",
+        description: "Alguma descrição da comida que você vai querer muito comer hehehe",
+        price: "R$ 45,00",
+        section: 1,
+    }, 
+    {
+        id: 3, 
+        name: "Item 3",
+        description: "Alguma descrição da comida que você vai querer muito comer hehehe",
+        price: "R$ 50,00",
+        section: 1,
+    }
+]
+
+export const products2 = [
+    {
+        id: 4, 
+        name: "Item 4",
+        price: null,
+        description: "Alguma descrição da comida que você vai querer muito comer hehehe",
+        section: 2,
+    },
+    {
+        id: 5, 
+        name: "Item 5",
+        price: null,
+        description: "Alguma descrição da comida que você vai querer muito comer hehehe",
+        section: 2,
+
+    },
+    {
+        id: 6, 
+        name: "Item 6",
+        price: null,
+        description: "Alguma descrição da comida que você vai querer muito comer hehehe",
+        section: 2,
+    }
+]
+
+export const allProducts = [...products, ...products2]
+
+export const sessions = [
+    {
+        id: 1,
+        name: "Session 1",
+        items: products
+    },
+    {
+        id: 2, 
+        name: "Session 2",
+        items: products2,
+        sizes: sizes
+    }
+]
