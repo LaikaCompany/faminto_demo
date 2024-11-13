@@ -12,7 +12,7 @@ export default function SessionCarousel()
         setSelectedCategory(updatedCategory)
     }
 
-    const sessions = ["Burguer","Pizza", "Refrigerante", "Beer", "Sobremesa", "Refeição", "test","test2", ]
+    const sessions = ["Pizza", "Macarrão", "Lasanha", "Bebidas", "Sobremesas" ]
     const selectedClasses = "border-b-mainOrange border-b-4"
 
     return (

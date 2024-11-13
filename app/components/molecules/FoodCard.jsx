@@ -26,7 +26,7 @@ export default function FoodCard({item})
 
     return (
         <div className="flex gap-4 w-full justify-between  p-4">
-            <img src='/images/beef-burguer.jpg' alt="back" className='w-32 h-32 rounded-lg'/>
+            <img src={`/images/${item.image}`} alt="back" className='w-32 h-32 rounded-lg'/>
             <div>
                 <span className="text-lg font-semibold font-main">
                     {item.name}
@@ -45,7 +45,6 @@ export default function FoodCard({item})
                             +
                         </div>
                     </div>
-   
                 </div>
             </div>
             
