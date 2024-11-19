@@ -73,7 +73,7 @@ export default function checkout()
             totalPrice: total,
             paymentMethod: selectedSize.name
         }
-        const phoneNumber = "31642836213"; // Phone number with country code
+        const phoneNumber = "55999174-6921"; // Phone number with country code
         window.open(formatOrderMessage(messageInfo, phoneNumber), '_blank');
     }
 
@@ -87,12 +87,12 @@ export default function checkout()
     
         // Format each item in the order
         order.forEach((item, index) => {
-            message += `*${item.name}* (x${item.quantity}) - R$${item.price}\n`;
+            message += `*${item.name}* (x${item.quantity}) - ${item.price}\n`;
         });
     
         // Add address, price, and payment information
         message += `\nEndereço:\n${street} - ${zone}\n\n`;
-        message += `Preço: ${totalPrice}\nMétodo de Pagamento: ${paymentMethod}`;
+        message += `Total: R$${totalPrice}\nMétodo de Pagamento: ${paymentMethod}`;
     
         // Encode message to URI format for WhatsApp
         const encodedMessage = encodeURIComponent(message);
