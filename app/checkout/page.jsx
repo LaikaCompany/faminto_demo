@@ -110,7 +110,7 @@ export default function checkout()
                 <img src="/icons/back.png" alt="back" onClick={()=>history.back()}/>
             </div>
             
-            <div className="mx-4 flex flex-col gap-y-4 mt-6">
+            <div className="mx-4 mb-2 flex flex-col gap-y-4 mt-6">
                 <form className="flex flex-col gap-y-2">
                     <div>
                         <span className=' py-2 text-xl font-semibold font-main'>
