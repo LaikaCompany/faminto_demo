@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    basePath:"/faminto_demo",
     output: "export",  // <=== enables static exports
     reactStrictMode: true,
-    basePath:'/faminto_demo',
     experimental: {
         missingSuspenseWithCSRBailout: false,
       },
