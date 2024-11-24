@@ -73,7 +73,7 @@ export default function checkout()
             totalPrice: total,
             paymentMethod: selectedSize.name
         }
-        const phoneNumber = "55999174-6921"; // Phone number with country code
+        const phoneNumber = "559991746921"; // Phone number with country code
         window.open(formatOrderMessage(messageInfo, phoneNumber), '_blank');
     }
 
@@ -83,7 +83,7 @@ export default function checkout()
         const { name, street, zone } = addressInfo;
         
         // Start building the message string
-        let message = `FAMITO - ${name}\nPedido:\n`;
+        let message = `Pedido no FAMITO \nPedido:\n`;
     
         // Format each item in the order
         order.forEach((item, index) => {
@@ -91,8 +91,8 @@ export default function checkout()
         });
     
         // Add address, price, and payment information
-        message += `\nEndereço:\n${street} - ${zone}\n\n`;
-        message += `Total: R$${totalPrice}\nMétodo de Pagamento: ${paymentMethod}`;
+        message += `\nCliente:\n${name}\nEndereço:\n${street} - ${zone}\n\n`;
+        message += `*Total: R$${totalPrice}*\nMétodo de Pagamento: ${paymentMethod}`;
     
         // Encode message to URI format for WhatsApp
         const encodedMessage = encodeURIComponent(message);

@@ -35,7 +35,7 @@ export default function DishPage()
 
     const onAdd = () => {
         addToCard({
-            id: crypto.randomUUID(),
+            id: crypto.randomUUID,
             productId: product.id,
             name: `${session.name} ${product.name} ${selectedSize?.shortName ?? ""}`,
             price: product.price ?? selectedSize.price

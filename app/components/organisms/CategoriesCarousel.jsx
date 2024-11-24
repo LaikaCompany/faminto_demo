@@ -16,7 +16,7 @@ export default function CategoriesCarousel({onSelectCalegory})
     }
 
     return (
-        <div className="flex my-6 overflow-auto gap-x-3" style={{scrollbarWidth: "none"}}>
+        <div className="flex no-scroll my-6 overflow-auto gap-x-3" style={{scrollbarWidth: "none"}}>
             {
                 CATEGORIES.map(category => {
                     return(

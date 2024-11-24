@@ -16,7 +16,7 @@ export default function SessionCarousel()
     const selectedClasses = "border-b-mainOrange border-b-4"
 
     return (
-        <div className="flex mb-6 h-10 items-center overflow-auto gap-x-3 sticky top-12 bg-white border-[0.5px] border-gray-400" style={{scrollbarWidth: "none"}}>
+        <div className="flex no-scroll mb-6 h-10 items-center overflow-auto gap-x-3 sticky top-12 bg-white border-[0.5px] border-gray-400" style={{scrollbarWidth: "none"}}>
             {
                 sessions.map(session => {
                     return(
