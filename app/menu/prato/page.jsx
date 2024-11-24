@@ -6,7 +6,7 @@ import TopPanel from "@/app/components/molecules/TopPanel";
 import { allProducts, sessions } from "@/app/const/categories";
 import { OrderCarContext } from "@/app/context/OrderCar";
 import { useSearchParams } from "next/navigation";
-import { useContext, useMemo, useState } from "react";
+import { Suspense, useContext, useMemo, useState } from "react";
 
 export default function DishPage()
 {
@@ -15,8 +15,8 @@ export default function DishPage()
     const [selectedOption, setSelectedOption] = useState(1)
 
     const [observations, setObservations] = useState(null)
-
     const searchParams = useSearchParams()
+
     const id = searchParams.get('id')
     
     const product = useMemo(() => (

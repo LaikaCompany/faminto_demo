@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import TopBar from "./components/molecules/TopBar";
 import { OrderCarContextProvider } from "./context/OrderCar";
+import { Suspense } from "react";
 
 
 export default function RootLayout({
@@ -14,9 +15,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <Suspense>
         <OrderCarContextProvider>
           {children}
         </OrderCarContextProvider>
+        </Suspense>
         
       </body>
     </html>
